@@ -2,7 +2,10 @@
 
 int main (void)
 {
-	int n, triangleNumber;
+	int n, triangleNumber, number;
+
+	printf ("What triangular number do you want? ");
+	scanf ("%i", &number);
 
 	printf ("TABLE OF TRIANGLE NUMBERS\n\n");
 	printf (" n     Sum from 1 to n\n");
@@ -10,7 +13,7 @@ int main (void)
 
 	triangleNumber = 0;
 
-	for ( n = 1; n <= 20; ++n) {
+	for ( n = 1; n <= number; ++n) {
 		triangleNumber += n; 
 		printf ("%2i      %i\n", n, triangleNumber);
 	}
